@@ -5,6 +5,7 @@
 @import "@/styles/products.css";
 @import "@/styles/product.css";
 @import "@/styles/not-found.css";
+@import "@/styles/product-details.css";
 
 * {
   margin: 0;
