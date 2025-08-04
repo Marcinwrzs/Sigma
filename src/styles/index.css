@@ -1,11 +1,7 @@
-:root {
-  --color-bg: #e5e8eb;
-  --color-text: #000000;
-  --input-bg: #f2e8e8;
-  --input-text: #964f52;
-  --max-width: 1280px;
-  --font-family: "Arial", sans-serif;
-}
+@import "@/styles/variables.css";
+@import "@/styles/header.css";
+@import "@/styles/logo.css";
+@import "@/styles/search-bar.css";
 
 * {
   margin: 0;
@@ -17,7 +13,6 @@ html,
 body {
   height: 100%;
   font-family: var(--font-family);
-  background-color: var(--color-bg);
   color: var(--color-text);
 }
 
