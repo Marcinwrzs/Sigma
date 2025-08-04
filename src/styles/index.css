@@ -4,6 +4,7 @@
 @import "@/styles/search-bar.css";
 @import "@/styles/products.css";
 @import "@/styles/product.css";
+@import "@/styles/not-found.css";
 
 * {
   margin: 0;

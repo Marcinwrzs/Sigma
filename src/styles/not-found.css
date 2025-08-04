@@ -1,0 +1,16 @@
+.not-found {
+  padding: 40px;
+  text-align: center;
+}
+
+.not-found-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.not-found-link {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 16px;
+  text-decoration: none;
+}
