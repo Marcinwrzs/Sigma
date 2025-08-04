@@ -4,6 +4,8 @@
   width: 136px;
   height: 23px;
   gap: 16px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo-icon-container {

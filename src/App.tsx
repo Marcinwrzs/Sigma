@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Products from "./pages/Products";
-import Product from "./pages/Product";
+import ProductDetails from "./pages/ProductDetails";
 import "@/styles/index.css";
 
 const App: React.FC = () => {
@@ -10,7 +10,7 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Products />} />
-        <Route path="/product/:id" element={<Product />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
     </div>
   );

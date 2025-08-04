@@ -2,6 +2,8 @@
 @import "@/styles/header.css";
 @import "@/styles/logo.css";
 @import "@/styles/search-bar.css";
+@import "@/styles/products.css";
+@import "@/styles/product.css";
 
 * {
   margin: 0;

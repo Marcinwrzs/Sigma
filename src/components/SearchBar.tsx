@@ -13,25 +13,28 @@ const SearchBar: React.FC = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      if (query.trim() === "") {
-        setResults([]);
-        setShowDropdown(false);
-        return;
-      }
+      const fetchResults = async () => {
+        if (query.trim() === "") {
+          setResults([]);
+          setShowDropdown(false);
+          return;
+        }
 
-      setLoading(true);
-      api
-        .searchProducts(query)
-        .then((res) => {
+        setLoading(true);
+
+        try {
+          const res = await api.searchProducts(query);
           setResults(res.products);
           setShowDropdown(true);
-        })
-        .catch(() => {
+        } catch (error) {
+          console.error(error);
           setResults([]);
-        })
-        .finally(() => {
+        } finally {
           setLoading(false);
-        });
+        }
+      };
+
+      fetchResults();
     }, 300);
 
     return () => clearTimeout(timeout);

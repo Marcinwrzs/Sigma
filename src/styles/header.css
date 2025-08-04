@@ -7,3 +7,36 @@
   border-bottom: 1px solid var(--border-color);
   background-color: var(--color-bg);
 }
+
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    height: auto;
+    padding: 16px;
+  }
+
+  .logo-container {
+    width: auto;
+    height: auto;
+  }
+
+  .search-container {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .search-bar-container {
+    width: 100%;
+  }
+
+  .search-input-container {
+    width: 100%;
+  }
+
+  .search-dropdown {
+    width: 100%;
+  }
+}
